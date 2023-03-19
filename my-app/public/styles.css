@@ -12,8 +12,11 @@ font-family: 'Open Sans', sans-serif; */
 
 
 #nav-bar {
-    padding: 2% 2%;
+    padding: 1% 2%;
     background-color: #F2F3F5;
+    position: sticky;
+    z-index: 10;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
 }
 
 .navbar {
@@ -23,7 +26,7 @@ font-family: 'Open Sans', sans-serif; */
     font-family: 'Noto Sans', sans-serif;
 }
 
-.nav-head {
+.nav-left {
     display: flex;
     align-items: center;
 }
@@ -36,51 +39,43 @@ font-family: 'Open Sans', sans-serif; */
     font-size: 0.7rem;
 }
 
-.nav-items {
-    width: 46%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.item-list {
-    font-size: 0.85rem;
-    /* width: 100%; */
-    list-style: none;
+.right-nav {
     display: flex;
     align-items: center;
+    grid-gap: 3vw;
 }
 
-.item-list li {
-    margin: 0 12%;
-}
-
-.item-list li a {
+.right-nav a {
     text-decoration: none;
+}
+
+.navbar-links {
+    margin: 0;
+    font-size: 0.85rem;
     color: #696969;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-out;
 }
 
-.item-list li a:hover {
+.navbar-links:hover {
     color: #252525;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-in;
+    transform: scale(120%);
 }
 
-.nav-btn {
-    margin-left: 5%;
-    padding: 0% 4%;
+.cta {
+    background: #4254F4;
     color: #FFF;
-    font-weight: 600;
-    background-color: #4254F4;
-    border-radius: 0.4rem;
-    font-family: 'Open Sans', sans-serif;
+    padding: 0.6vw 1.6vw;
+    border-radius: 0.8vh;
     border: 2px solid #4254F4;
-    transition: 0.3s ease-in;   
+    font-size: 0.85rem;
+    transition: 0.3s ease-out;
 }
 
-.nav-btn:hover {
-    background-color: #FFF;
+.cta:hover {
+    background: white;
     color: #4254F4;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-in;
 }
 
 
@@ -219,16 +214,16 @@ font-family: 'Open Sans', sans-serif; */
     justify-content: space-evenly;
 }
 
-.card {
+.team-card {
     width: 20%;
     min-width: 240px;
     /* max-height: max-content; */
     border-radius: 0.8rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 3% 1%;
+    padding: 2% 1%;
 }
 
-.card-cont {
+.team-card-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,7 +264,7 @@ font-family: 'Open Sans', sans-serif; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0;
+    margin: 10% 0 4% 0;
 }
 
 .post {
@@ -282,8 +277,9 @@ font-family: 'Open Sans', sans-serif; */
 
 .name {
     font-family: 'Questrial', sans-serif;
-    color: #3c3c3c;
-    font-size: 1.2rem;
+    color: #4a4a4a;
+    font-size: 1.4rem;
+    font-weight:bold;
     margin: 6% 0 4% 0;
 }
 
