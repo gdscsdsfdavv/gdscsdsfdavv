@@ -7,16 +7,15 @@ font-family: 'Open Sans', sans-serif; */
     padding: 0;
 }
 
-
 /* ------------------------- navbar ------------------------- */
 
 
 #nav-bar {
-    padding: 1% 2%;
+    padding: 1% 5vh;
     background-color: #F2F3F5;
-    position: sticky;
+    /* border-radius: 0 0 5vh 5vh; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 10;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
 }
 
 .navbar {
@@ -85,7 +84,7 @@ font-family: 'Open Sans', sans-serif; */
 /* --------------------- #Home-page ------------------- */
 
 #hm-pg{
-    padding: 0% 0 4%;
+    padding: 0% 0 4% 0;
 }
 
 .s1-cont {

@@ -58,7 +58,7 @@
     
     <section id="hm-pg"> <!------------------------------- home page ------------------------------------->
         <div class="s1-cont">
-            <div class="s1-left-pane">
+            <div style="z-index: -1;" class="s1-left-pane">
                 <svg height="450px" width="300">
                     <g fill="none">
                         <!-- <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" /> -->
@@ -99,8 +99,11 @@
                     <g fill="none">
                         <circle cx="180px" cy="360px" r="50px" fill="#DBF4E5"/> <!--lig-gr-semC-->
                         <rect x="130px" y="365px" height="90px" width="100px" style="fill: #DBF4E5;"/>
-                        <circle cx="180px" cy="395px" r="25px" fill="#0F9D58"/> <!--dk-gr-semC-->
-                        <rect x="155px" y="395px" height="55px" width="50px" style="fill: #0F9D58;"/>
+                        <g xmlns="http://www.w3.org/2000/svg" id="hero_left-vector_27_to">
+                            <circle cx="180px" cy="395px" r="25px" fill="#0F9D58"/> <!--dk-gr-semC-->
+                            <rect x="155px" y="395px" height="55px" width="50px" style="fill: #0F9D58;"/>
+                        </g>
+                        
                     </g>
 
                 </svg>
@@ -115,7 +118,7 @@
                 </div>
             </div>
             <div class="s1-right-pane">
-                <svg height="450px" width="300">
+                <svg style="z-index: -1;" height="450px" width="300">
                     <g fill="none">
                         <!-- <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" /> -->
                         <circle cx="68px" cy="322px" r="35px" fill="#f5d4d2"/> <!--red-sq-->
