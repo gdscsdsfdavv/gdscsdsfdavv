@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,90 +14,510 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Questrial&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
 
-    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+
+
 </head>
+
 <body>
-    <section id="team"> <!------------------------------ Teams ------------------------------------>
+    <section id="nav-bar"> <!-------------------------- navbar -------------------------------->
+        <nav class="navbar">
+            
+            <div class="nav-left">
+                <img style="width: 10%" src="images/maingd-removebg-preview.png" alt="gdsc-logo">
+                <div style="margin-left: 2%;" class="nav-h-in-cont">
+                    <p class="nav-main-head">Google Developer Student Club</p>
+                    <p class="nav-sub-head">SDSF DAVV, INDORE</p>
+                </div>
+            </div>
+        
+            <div class="right-nav">    
+                <a href="#">
+                    <p class="navbar-links">Events</p> 
+                </a>
+                <a href="#">
+                    <p class="navbar-links">Achievements</p> 
+                </a>
+                <a href="#">
+                    <p class="navbar-links">Flashback</p> 
+                </a>
+                <a href="teams.html">
+                    <p class="navbar-links">Team</p> 
+                </a>
+                <a href="#">
+                    <p class="cta">Contact Us</p> 
+                </a>
+            </div>            
 
-        <div class="team-msg">
-            <h1>The one who make it happen!</h1>
-            <p>Pillars of GDSC SDSF.</p>
-        </div>
+        </nav>
+    </section> <!-------------------------------- navbar -------------------------------------->
 
-        <div class="lead">
+    <section style="margin-top: 5%;" id="team"> <!------------------------------ Teams ------------------------------------>
 
-        </div>
-
-        <div class="team-mem">
-
-            <div class="team-card">
-                <div class="team-card-cont">
-
-                    <div class="profile-pic">
-                        <!-- mulish -->
-                        <div class="out-bod">
-                            <img class="mem-pic" src="images/Rishabhh.jpg" alt="android-lead">
+        <div style="padding: 0 10%;" class="cont-1">
+            <div class="msg-cont">
+                <div class="team-msg">
+                    <h1>Pillars of GDSC SDSF.</h1>
+                    <p>Alone we can do so little; Together we can do so much!</p>
+                </div>
+            </div>
+    
+            <div class="lead">
+                <div class="lead-bg">
+                    <div class="lead-cont">
+                        <div style="width: 50%;" class="lead-col-1">
+                            <p class="lead-post">GDSC Lead</p>
+                            <h1 class="lead-name">Vinayak Gavariya</h1>
+                            <p class="lead-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem sunt ullam dolores numquam amet rem non sapiente quas iste, doloribus dolor perspiciatis deleniti tempore suscipit sed placeat asperiores sequi?</p>
+                            <div class="lead-socials">
+                                <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+    
+                                <a style="margin: 0 7%;" class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+    
+                                <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="info">
-                        <strong><p class="post">Android Lead</p></strong>
-                        <h1 class="name">Rishabh Jaiswal</h1>
-                        <center><p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat.</p></center>
-                    </div>
-                    <div class="socials">
-                        <!-- font awesome -->
-                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        
-                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
-
-                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+    
+                        <div style="width: 50%;" class="col-2">
+                            <img style="width: 100%;" src="images/vinayakSir-removebg-preview.png" alt="gdsc-lead">
+                        </div>
                     </div>
                 </div>
             </div>
-                
-            <div class="g-pic">
-                <!-- png -->
-                <img class="g-pic-img" src="images/maingd-removebg-preview.png" alt="google">
-                <h1 style="font-size: 2rem;" class="name">Teams</h1>
-            </div>
+        </div>
 
-            <div class="team-card">
-                    <div class="team-card-cont">
-    
-                        <div class="profile-pic">
-                            <!-- mulish -->
-                            <div class="out-bod">
-                                <img class="mem-pic" src="images/Rishita2.jpeg" alt="android-lead">
+        <div class="car-con">
+
+            <div id="carouselExample" class="carousel slide">
+
+                <div style="padding: 5%;" class="carousel-inner">
+
+                    <!-------------------------- slide 1 ------------------------ -->
+                    <div class="carousel-item active">
+                        <div class="team-mem">
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+                                        <!-- mulish -->
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/Rishabhh.jpg" alt="android-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Android Lead</p>
+                                        </strong>
+                                        <h1 class="name">Rishabh Jaiswal</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+                                        <!-- font awesome -->
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
                             </div>
-    
-                        </div>
-                        <div class="info">
-                            <strong><p class="post">Graphics and Design Lead</p></strong>
-                            <h1 class="name">Rishita Gupta</h1>
-                            <center><p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat.</p></center>
-                        </div>
-                        <div class="socials">
-                            <!-- font awesome -->
-                            <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            
-                            <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
-    
-                            <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                            <div class="g-pic">
+                                <!-- png -->
+                                <img class="g-pic-img" src="images/maingd-removebg-preview.png" alt="google">
+                                <h1 style="font-size: 2rem;" class="name">Teams</h1>
+                            </div>
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/Rishita2.jpeg" alt="android-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Graphics and Design Lead</p>
+                                        </strong>
+                                        <h1 class="name">Rishita Gupta</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
+                    <!-------------------------- slide 2 ------------------------ -->
+                    <div class="carousel-item">
+                        <div class="team-mem">
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+                                        <!-- mulish -->
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/harshitSir.jpg" alt="data-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Cloud Lead</p>
+                                        </strong>
+                                        <h1 class="name">Harshit sir</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+                                        <!-- font awesome -->
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="g-pic">
+                                <!-- png -->
+                                <img class="g-pic-img" src="images/maingd-removebg-preview.png" alt="google">
+                                <h1 style="font-size: 2rem;" class="name">Teams</h1>
+                            </div>
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/divya.jpg" alt="out-source-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Out source Lead</p>
+                                        </strong>
+                                        <h1 class="name">Divya Goel</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-------------------------- slide 3 ------------------------ -->
+                    <div class="carousel-item">
+                        <div class="team-mem">
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+                                        <!-- mulish -->
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/himanshiMam.jpg" alt="himanshiMam-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Development Lead</p>
+                                        </strong>
+                                        <h1 class="name">Himanshi Joshi</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+                                        <!-- font awesome -->
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="g-pic">
+                                <!-- png -->
+                                <img class="g-pic-img" src="images/maingd-removebg-preview.png" alt="google">
+                                <h1 style="font-size: 2rem;" class="name">Teams</h1>
+                            </div>
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/jonsi.jpeg" alt="Content-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Content Lead</p>
+                                        </strong>
+                                        <h1 class="name">Jansi Goswami</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-------------------------- slide 4 ------------------------ -->
+                    <div class="carousel-item">
+                        <div class="team-mem">
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+                                        <!-- mulish -->
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/mohak.jpg" alt="development-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Data Science Lead</p>
+                                        </strong>
+                                        <h1 class="name">Mohak Singhania</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+                                        <!-- font awesome -->
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="g-pic">
+                                <!-- png -->
+                                <img class="g-pic-img" src="images/maingd-removebg-preview.png" alt="google">
+                                <h1 style="font-size: 2rem;" class="name">Teams</h1>
+                            </div>
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/tusharSir.jpg" alt="development-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Development Lead</p>
+                                        </strong>
+                                        <h1 class="name">Tushar Panchal</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-------------------------- slide 5 ------------------------ -->
+                    <div class="carousel-item">
+                        <div class="team-mem">
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+                                        <!-- mulish -->
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/Aman.jpg" alt="graphics-and-video-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Graphics and Video Lead</p>
+                                        </strong>
+                                        <h1 class="name">Aman Prajapat</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+                                        <!-- font awesome -->
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="g-pic">
+                                <!-- png -->
+                                <img class="g-pic-img" src="images/maingd-removebg-preview.png" alt="google">
+                                <h1 style="font-size: 2rem;" class="name">Teams</h1>
+                            </div>
+
+                            <div class="team-card">
+                                <div class="team-card-cont">
+
+                                    <div class="profile-pic">
+
+                                        <div class="out-bod">
+                                            <img class="mem-pic" src="images/niveshSir.jpg" alt="management-lead">
+                                        </div>
+
+                                    </div>
+                                    <div class="info">
+                                        <strong>
+                                            <p class="post">Management Lead</p>
+                                        </strong>
+                                        <h1 class="name">Nivesh Gaikwad</h1>
+                                        <center>
+                                            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Nisi, quaerat.</p>
+                                        </center>
+                                    </div>
+                                    <div class="socials">
+
+                                        <a class="logo linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                                        <a class="logo github" href="#"><i class="fa-brands fa-github"></i></a>
+
+                                        <a class="logo insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <i  
+                    style="font-size: 2rem;
+                            color: #898989;" 
+                    class="fa-solid fa-chevron-left"></i>
+                </button>
+
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <i 
+                    style="font-size: 2rem;
+                            color: #898989;" 
+                    class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
-            
+
+
         </div>
+
+
     </section> <!------------------------------ teams ------------------------------------>
 </body>
+
 </html>

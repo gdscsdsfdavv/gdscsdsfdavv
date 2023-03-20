@@ -204,9 +204,64 @@ font-family: 'Open Sans', sans-serif; */
 
 /* --------------------- #team ------------------- */
 
-#team {
-    margin: 10% 0;
+/*--------------------- lead ---------------------*/
+
+.lead {
+    background-color: #FCFCFC;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    margin: 10% 0 8% 0;
 }
+
+.lead-bg {
+    background-image: url("images/leadBg.png");
+    border-radius: 1rem;
+    background-position: 50%;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.lead-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lead-col-1 {
+    padding: 0 5% 0 8%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.lead-post {
+    color: #616161;
+    font-size: 0.9rem;
+    margin-bottom: 2%;
+}
+
+.lead-name {
+    color: #252525;
+}
+
+.lead-des {
+    font-size: 0.8rem;
+    margin: 7% 0;
+    line-height: 1.5;
+    color: #888888;
+}
+
+
+
+/*--------------------- lead ---------------------*/
+
+/* .msg-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-msg {
+    width: 75%;
+} */
 
 .team-mem {
     display: flex;
@@ -214,7 +269,10 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .team-card {
-    width: 20%;
+    background-image: url("/images/cardBg.png");
+    background-position: 50%;
+    background-size: cover;
+    width: 25%;
     min-width: 240px;
     /* max-height: max-content; */
     border-radius: 0.8rem;
@@ -230,7 +288,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .profile-pic {
-    width: 45%;
+    width: 52%;
     /* padding: 5%; */
 }
 
@@ -263,7 +321,7 @@ font-family: 'Open Sans', sans-serif; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0 4% 0;
+    margin: 10% 0 3% 0;
 }
 
 .post {
@@ -277,23 +335,23 @@ font-family: 'Open Sans', sans-serif; */
 .name {
     font-family: 'Questrial', sans-serif;
     color: #4a4a4a;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight:bold;
     margin: 6% 0 4% 0;
 }
 
-
-
 .des {
     font-family: 'Noto Sans', sans-serif;
     color: #6c6c6c;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     letter-spacing: 0.03rem;
     /* line-height: 0.8rem; */
     padding: 4% 15%;
 }
 
 .socials {
+    font-size: 1.2rem;
+    color: #252525;
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -312,6 +370,7 @@ font-family: 'Open Sans', sans-serif; */
 .g-pic {
     display: flex;
     align-items: center;
+    margin: 0 7%;
 }
 
 .g-pic-img {
