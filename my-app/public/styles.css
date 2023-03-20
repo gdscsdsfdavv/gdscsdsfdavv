@@ -336,7 +336,7 @@ footer {
 .foot-main-head {
     font-size: 1.6rem;
     font-family: 'Noto sans', sans-serif; 
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
 }
 
 .foot-main-des {
