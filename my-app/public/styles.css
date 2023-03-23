@@ -11,7 +11,7 @@ font-family: 'Open Sans', sans-serif; */
 
 
 #nav-bar {
-    padding: 1% 5vh;
+    padding: 1.3% 5vh;
     background-color: #F2F3F5;
     /* border-radius: 0 0 5vh 5vh; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -31,11 +31,11 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .nav-main-head {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .nav-sub-head {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .right-nav {
@@ -50,7 +50,7 @@ font-family: 'Open Sans', sans-serif; */
 
 .navbar-links {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: #696969;
     transition: 0.3s ease-out;
 }
@@ -64,10 +64,10 @@ font-family: 'Open Sans', sans-serif; */
 .cta {
     background: #4254F4;
     color: #FFF;
-    padding: 0.6vw 1.6vw;
+    padding: 0.5vw 1.4vw;
     border-radius: 0.8vh;
     border: 2px solid #4254F4;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     transition: 0.3s ease-out;
 }
 
@@ -84,10 +84,14 @@ font-family: 'Open Sans', sans-serif; */
 /* --------------------- #Home-page ------------------- */
 
 #hm-pg{
-    padding: 0% 0 4% 0;
+    z-index: -1;
+    background-image: url("images/mainBg.png");
+    background-position: 50%;
+    background-size: cover;
 }
 
 .s1-cont {
+    padding: 18% 0 20% 0;
     display: flex;
     justify-content: space-between;
 }
@@ -97,7 +101,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .hm-m-pane-cont {
-    margin: 20% 0 0 0;
+    /* margin: 20% 0 0 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,7 +109,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .hm-gdsc-logo {
-    width: 25%;
+    width: 20%;
 }
 
 .hm-main-head {
@@ -115,13 +119,13 @@ font-family: 'Open Sans', sans-serif; */
 
 .g {
     color: #7d848b;
-    font-size:2.3rem;
-    margin: 3% 0 0.5% 0;
+    font-size: 1.5rem;
+    /* margin: 3% 0 0.5% 0; */
 }
 
 .s {
     color: #9a9c9f;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 
@@ -134,10 +138,19 @@ font-family: 'Open Sans', sans-serif; */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 24px, rgba(17, 17, 26, 0.1) 0px -16px 56px, rgba(17, 17, 26, 0.1) 0px -24px 80px;
 }
 
+.s2-bg {
+    background-image: url("images/helloBg.png");
+    background-position: 50%;
+    background-size: cover;
+    padding: 3%;
+
+}
+
 .s2-main-head {
     font-size: 2.7em;
     color: #252525;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
 .s2-main-des {
@@ -147,7 +160,7 @@ font-family: 'Open Sans', sans-serif; */
     line-height: 1.43vw;
     font-size: 1.06vw;
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.02vw;
+    /* letter-spacing: 0.0vw; */
     word-spacing: 2px;
 }
 
@@ -170,10 +183,6 @@ font-family: 'Open Sans', sans-serif; */
     box-shadow: rgba(0, 0, 0, 0.403) 0px 5px 15px;
 }
 
-.s2-cont {
-    padding: 3%;
-}
-
 .s2-col-1 {
     display: flex;
     align-items: center;
@@ -192,13 +201,36 @@ font-family: 'Open Sans', sans-serif; */
 .s2-col-2 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 /* --------------------- #Hello-page ------------------- */
 
 
+/*--------------------------- about ---------------------------*/
 
+#about {
+    padding: 0 10%;
+}
+
+.s3-in-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s3-col-2-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.s3-col-2-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*--------------------------- about ---------------------------*/
 
 
 
@@ -240,11 +272,12 @@ font-family: 'Open Sans', sans-serif; */
 
 .lead-name {
     color: #252525;
+    font-family: 'Open sans', sans-serif;
 }
 
 .lead-des {
     font-size: 0.8rem;
-    margin: 7% 0;
+    margin: 7% 0 10% 0;
     line-height: 1.5;
     color: #888888;
 }
@@ -257,11 +290,21 @@ font-family: 'Open Sans', sans-serif; */
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .team-msg {
-    width: 75%;
-} */
+    font-family: 'Open Sans', sans-serif;
+} 
+
+.team-msg h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+
+.team-msg p {
+    color: #637282;
+    font-size: 0.9rem;
+}
 
 .team-mem {
     display: flex;
