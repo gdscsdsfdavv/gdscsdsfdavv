@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +22,10 @@
 </head>
 <body>
     <section id="nav-bar"> <!-------------------------- navbar -------------------------------->
-        <nav class="navbar">
+        <nav class="navbar h-nav-resp">
             
             <div class="nav-left">
-                <img style="width: 10%" src="images/maingd-removebg-preview.png" alt="gdsc-logo">
+                <img src="images/maingd-removebg-preview.png" alt="gdsc-logo">
                 <div style="margin-left: 2%;" class="nav-h-in-cont">
                     <p class="nav-main-head"><a style="text-decoration: none; color: #252525;" href="index.html">Google Developer Student Club</a></p>
                     <p class="nav-sub-head"><a style="text-decoration: none; color: #252525;" href="index.html">SDSF DAVV, INDORE</a></p>
@@ -32,22 +33,30 @@
             </div>
         
             <div class="right-nav">    
-                <a href="#">
-                    <p class="navbar-links">Events</p> 
-                </a>
-                <a href="#">
-                    <p class="navbar-links">Achievements</p> 
-                </a>
-                <a href="#">
-                    <p class="navbar-links">Flashback</p> 
-                </a>
-                <a href="teams.html">
-                    <p class="navbar-links">Team</p> 
-                </a>
-                <a href="#">
-                    <p class="cta">Contact Us</p> 
-                </a>
-            </div>            
+
+                <div class="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="right-nav-in v-nav-resp">
+                    <a href="#">
+                        <p class="navbar-links">Events</p> 
+                    </a>
+                    <a href="#">
+                        <p class="navbar-links">Achievements</p> 
+                    </a>
+                    <a href="#flashback">
+                        <p class="navbar-links">Flashback</p> 
+                    </a>
+                    <a href="teams.html">
+                        <p class="navbar-links">Team</p> 
+                    </a>
+                    <a href="#">
+                        <p class="cta">Contact Us</p> 
+                    </a>       
+                </div>        
+            </div>
+            
 
         </nav>
     </section> <!-------------------------------- navbar -------------------------------------->
@@ -204,5 +213,6 @@
         </div>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>

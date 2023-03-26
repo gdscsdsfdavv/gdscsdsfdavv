@@ -35,6 +35,10 @@ body {
     align-items: center;
 }
 
+.nav-left img {
+    width: 10%;
+}
+
 .nav-main-head {
     font-size: 0.8rem;
 }
@@ -49,7 +53,13 @@ body {
     grid-gap: 3vw;
 }
 
-.right-nav a {
+.right-nav-in {
+    display: flex;
+    align-items: center;
+    grid-gap: 3vw;
+}
+
+.right-nav-in a {
     text-decoration: none;
 }
 
@@ -80,6 +90,11 @@ body {
     background: white;
     color: #2E8B57;
     transition: 0.3s ease-in;
+}
+
+.burger {
+    display: none;
+    font-size: 1.3rem;
 }
 
 
