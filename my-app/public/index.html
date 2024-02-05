@@ -8,12 +8,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Questrial&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Koh+Santepheap&family=Noto+Sans&family=Open+Sans&family=Questrial&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,10 +22,10 @@
 </head>
 <body>
     <section id="nav-bar"> <!-------------------------- navbar -------------------------------->
-        <nav class="navbar">
+        <nav class="navbar h-nav-resp">
             
             <div class="nav-left">
-                <img style="width: 10%" src="images/maingd-removebg-preview.png" alt="gdsc-logo">
+                <img src="images/maingd-removebg-preview.png" alt="gdsc-logo">
                 <div style="margin-left: 2%;" class="nav-h-in-cont">
                     <p class="nav-main-head"><a style="text-decoration: none; color: #252525;" href="index.html">Google Developer Student Club</a></p>
                     <p class="nav-sub-head"><a style="text-decoration: none; color: #252525;" href="index.html">SDSF DAVV, INDORE</a></p>
@@ -33,22 +33,30 @@
             </div>
         
             <div class="right-nav">    
-                <a href="#">
-                    <p class="navbar-links">Events</p> 
-                </a>
-                <a href="#">
-                    <p class="navbar-links">Achievements</p> 
-                </a>
-                <a href="#">
-                    <p class="navbar-links">Flashback</p> 
-                </a>
-                <a href="teams.html">
-                    <p class="navbar-links">Team</p> 
-                </a>
-                <a href="#">
-                    <p class="cta">Contact Us</p> 
-                </a>
-            </div>            
+
+                <div class="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="right-nav-in v-nav-resp">
+                    <a href="#">
+                        <p class="navbar-links">Events</p> 
+                    </a>
+                    <a href="#">
+                        <p class="navbar-links">Achievements</p> 
+                    </a>
+                    <a href="#flashback">
+                        <p class="navbar-links">Flashback</p> 
+                    </a>
+                    <a href="teams.html">
+                        <p class="navbar-links">Team</p> 
+                    </a>
+                    <a href="#">
+                        <p class="cta">Contact Us</p> 
+                    </a>       
+                </div>        
+            </div>
+            
 
         </nav>
     </section> <!-------------------------------- navbar -------------------------------------->
@@ -143,12 +151,28 @@
                     </div>
                 </div>
                 <div class="s2-col-w s3-col-2-2">
-                    <img style="width: 80%;" src="images/red.png">
+                    <img style="width: 80%;" src="images/red-removebg-preview.png">
                 </div>
             </div>
         </div>
 
-    </section>
+    </section> <!---------------------about--------------------->
+
+
+
+    <section id="flashback"> <!---------------------- flashback ---------------------->
+        <div class="f-cont">
+            <div class="f-bg">
+                <div class="f-title">
+                    <a style="text-decoration: none;" href="#"><h1>Flashback<center><hr class="fl-hr"></center></h1></a>
+                    <p>GDSC SDSF 2022-2023</p>
+                </div>
+            </div>
+        </div>
+    </section> <!---------------------- flashback ---------------------->  
+
+
+
 
     <footer>
         <div class="row-1">
@@ -182,12 +206,13 @@
             </div>
         </div>
 
-        <center><hr></center>
+        <center><hr class="foot-hr"></center>
 
         <div class="row-2">
             <i class="fa-regular fa-copyright"></i> <p>GDSC SDSF DAVV</p>
         </div>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>

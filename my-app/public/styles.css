@@ -7,6 +7,11 @@ font-family: 'Open Sans', sans-serif; */
     padding: 0;
 }
 
+body {
+    background-color: #f8f8f8;
+
+}
+
 /* ------------------------- navbar ------------------------- */
 
 
@@ -30,6 +35,10 @@ font-family: 'Open Sans', sans-serif; */
     align-items: center;
 }
 
+.nav-left img {
+    width: 10%;
+}
+
 .nav-main-head {
     font-size: 0.8rem;
 }
@@ -44,7 +53,13 @@ font-family: 'Open Sans', sans-serif; */
     grid-gap: 3vw;
 }
 
-.right-nav a {
+.right-nav-in {
+    display: flex;
+    align-items: center;
+    grid-gap: 3vw;
+}
+
+.right-nav-in a {
     text-decoration: none;
 }
 
@@ -62,19 +77,24 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .cta {
-    background: #4254F4;
+    background: #2E8B57;
     color: #FFF;
     padding: 0.5vw 1.4vw;
     border-radius: 0.8vh;
-    border: 2px solid #4254F4;
+    border: 2px solid #2E8B57;
     font-size: 0.7rem;
     transition: 0.3s ease-out;
 }
 
 .cta:hover {
     background: white;
-    color: #4254F4;
+    color: #2E8B57;
     transition: 0.3s ease-in;
+}
+
+.burger {
+    display: none;
+    font-size: 1.3rem;
 }
 
 
@@ -155,7 +175,7 @@ font-family: 'Open Sans', sans-serif; */
 
 .s2-main-des {
     color: #637282;
-    margin: 8% 0;
+    margin: 8% 0 13% 0;
     /* padding-right: 12%; */
     line-height: 1.43vw;
     font-size: 1.06vw;
@@ -241,6 +261,7 @@ font-family: 'Open Sans', sans-serif; */
 .lead {
     background-color: #FCFCFC;
     border-radius: 1rem;
+    border: 1px solid rgb(220, 220, 220);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     margin: 10% 0 8% 0;
 }
@@ -420,6 +441,61 @@ font-family: 'Open Sans', sans-serif; */
     width:70px;
 }
 
+
+/*------------------------------ flashback ------------------------------*/
+
+#flashback {
+    margin: 6% 0 10% 0;
+}
+
+.f-bg {
+    background-image: url("images/flashback_trail_bg.png");
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    /* filter: blur(5px); */
+    padding: 15% 0;
+    box-shadow: rgba(0, 0, 0, 0.686) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.686) 0px 30px 60px -12px inset;
+}
+
+.f-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-title h1 {
+    font-size: 5rem;
+    color: #FFF;
+    font-family: 'Koh Santepheap', cursive;
+    font-weight: 400;
+}
+
+.fl-hr {
+    position: relative;
+    width: 0;
+    bottom: 12px;
+    border: none;
+    border-bottom: 3px solid #FFF;
+    transition: 0.3s ease-out;
+}
+
+.f-title h1:hover hr {
+    width: 90%;
+    transition: 0.3s ease-in;
+}
+
+.f-title p {
+    opacity: 80%;
+    color: #FFF;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+}
+
+
+/*------------------------------ flashback ------------------------------*/
+
 /*----------------------------- footer -----------------------------*/
 
 footer {
@@ -488,7 +564,7 @@ footer {
     transition: 0.3s ease-out;
 }
 
-hr {
+.foot-hr {
     width: 90%;
     opacity: 20%;
     border: none;
